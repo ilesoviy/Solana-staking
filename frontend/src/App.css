@@ -1,0 +1,430 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-bar {
+    /* display: flex; */
+    width: 272px;
+    /* height: 1024px; */
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+
+    /* border-right: 1px solid hsla(0, 0%, 100%, 0.1); */
+    backdrop-filter: blur(60px);
+}
+
+.header {
+    width: 100%;
+    padding: 16px 24px;
+    gap: 8px;
+
+    backdrop-filter: blur(60px);
+}
+
+.bg-header {
+    background: white !important;
+}
+
+.main-logo {
+    width: 100%;
+    text-align: center;
+
+    /* T 20/SemiBold */
+    /* font-family: Sora; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.8px;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-bar-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.nav-bar-panel2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 16px; */
+    align-self: stretch;
+}
+
+.child-panel {
+    display: flex;
+    padding: 8px 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: white;
+    border-radius: 8px;
+}
+
+.child-panel:hover {
+    border-radius: 8px;
+    /* background: rgba(70, 40, 255, 0.30); */
+}
+
+.title-1 {
+    /* T 20/SemiBold */
+    /* font-family: Sora; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.8px;
+}
+
+.control-item {
+    display: flex;
+    padding: 8px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.item-field {
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.title-2 {
+    /* T 14/SemiBold */
+    /* font-family: Sora; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: -0.1px;
+}
+
+.help-panel {
+    background: url(./assets/images/bg-help.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 16px;
+    text-align: left;
+    gap: 8px;
+}
+
+.btn-doc {
+    display: flex;
+    width: 186px;
+    height: 35.103px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 12px;
+    background: linear-gradient(127deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
+    backdrop-filter: blur(5px);
+}
+
+.btn-text {
+    text-align: center;
+    /* font-family: Sora; */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 160% */
+    letter-spacing: 0.3px;
+}
+
+.source-1 {
+    /* T 12/Regular */
+    /* font-family: Sora; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 133.333% */
+    letter-spacing: 0.3px;
+}
+
+.color-mode {
+    display: flex;
+    align-items: center;
+    gap: 124px;
+    align-self: stretch;
+}
+
+.color-mode-panel {
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 4px;
+    gap: 4px;
+
+    border-radius: 20px;
+
+}
+
+/* Token Create Panel */
+.create-panel {
+    display: flex;
+    width: 100%;
+    max-width: 640px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    border-radius: 16px;
+    /* background: linear-gradient(127deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%); */
+    backdrop-filter: blur(60px);
+}
+
+.main-title {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+
+    /* H 32/Bold */
+    /* font-family: Sora; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -1px;
+
+    /* background: linear-gradient(98deg, #FFF 70.67%, rgba(117, 122, 140, 0.00) 108.55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.sub-title {
+    color: #FFF;
+
+    /* T 24/Regular */
+    /* font-family: Sora; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.6px;
+}
+
+.text-input {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    padding: 24px 16px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    border: 1px solid var(--Surface-Dark-Border, #222229);
+}
+
+.text-input:focus-visible {
+    outline: none;
+}
+
+.btn-create {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    background: #4628FF;
+}
+
+.btn-back {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    border: 1.5px solid #4628FF;
+}
+
+.token-kind {
+    display: flex;
+    height: 32px;
+    padding: 14px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(70, 40, 255, 0.30);
+}
+
+.dropzone:hover {
+    border: 1px dashed;
+}
+
+.dropzone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dropzone-icon {
+        visibility: hidden;
+    }
+
+    &:hover {
+        img {
+            opacity: 0.5;
+        }
+
+        .dropzone-icon {
+            visibility: visible;
+        }
+    }
+}
+
+.dropzone-icon {
+    position: absolute;
+}
+
+.dropzone-icon svg {
+    font-size: 2.5rem;
+    color: #cccccc;
+}
+
+@media screen and (max-width:640px) {
+    .create-panel {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .main-title {
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+
+        /* font-family: Sora; */
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -1px;
+    }
+
+    .title-1 {
+        font-size: 16px;
+    }
+
+    .title-2 {
+        font-size: 12px;
+    }
+
+    .header {
+        padding: 12px 12px;
+    }
+
+    .text-input {
+        font-size: 12px;
+        height: 36px;
+        width: 100%;
+        padding: 16px 16px;
+    }
+}
+
+.MuiTooltip-tooltip {
+    background-color: white !important;
+    color: black !important;
+    font-size: 12px !important;
+    /* font-family: Sora !important; */
+    margin-bottom: 8px !important;
+}
+
+.MuiTooltip-arrow::before {
+    background: white !important;
+    color: blue;
+}

@@ -1,0 +1,11 @@
+
+  // with options
+  {
+    "plugins": [
+      ["@babel/plugin-transform-modules-commonjs", {
+        "module": true,
+        "strict": true,
+        "importInterop": "node"
+      }]
+    ]
+  }

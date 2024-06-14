@@ -1,0 +1,90 @@
+{
+  "name": "launchpad",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@dropzone-ui/react": "^7.0.4",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@metaplex-foundation/js": "^0.20.1",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
+    "@mui/x-date-pickers": "^6.19.6",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/buffer-layout": "^4.0.1",
+    "@solana/spl-token": "^0.4.1",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-material-ui": "^0.16.34",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-wallets": "^0.19.26",
+    "@solana/web3.js": "^1.90.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "add": "^2.0.6",
+    "arweave": "^1.14.4",
+    "axios": "^1.6.7",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "https-browserify": "^1.0.0",
+    "notistack": "^3.0.1",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-step-wizard": "^5.3.11",
+    "react-toastify": "^10.0.4",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^6.1.8",
+    "url": "^0.11.3",
+    "vm-browserify": "^1.1.2",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.21"
+  },
+  "overrides": {
+    "react-refresh": "0.11.0",
+    "@ledgerhq/errors": "6.16.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
+    "winbuild": "set \"GENERATE_SOURCEMAP=false\" && react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
+    ],
+    "development": [
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "tailwindcss": "^3.4.1"
+  }
+}
